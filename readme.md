@@ -10,4 +10,11 @@
 - Verify terraform user can make aws cli calls.
 - Check in aws provider file for terraform.
 - run ```terraform init``` to download aws plugins for terraform to use.
+- code out rds configurations
+- add a secrets.tfvars file to mask sensitive values
+- run ```terraform fmt``` 
+- then run ```terraform validate```
+- then run ```terraform plan --var-file="secrets.tfvars"```
+- after run ```terraform apply --var-file="secrets.tfvars"```
+
 
